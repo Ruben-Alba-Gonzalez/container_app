@@ -30,7 +30,7 @@ if($con){
             <body>
                 <header>
                     <div class="contentheader">
-                        <img class="imagenh" src="data_maintenance_isometric.svg">
+                        <img class="imagenh" src="images/data_maintenance_isometric.svg">
                         <dir></dir>
                         <nav>
                             <ul class="menu">
@@ -42,7 +42,7 @@ if($con){
                 <div class="formulario">
                     <form action="">
                         <div class="user">
-                            <img src="undraw_male_avatar_323b.svg">
+                            <img src="images/undraw_male_avatar_323b.svg">
                             <h1>Nombre: '.$nombre.'</h1>
                         </div>
                         <div class="infouser">
