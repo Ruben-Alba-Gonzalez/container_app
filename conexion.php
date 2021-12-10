@@ -2,6 +2,12 @@
 $nombre = $_POST['nombre'];
 $pass = $_POST['password'];
 
+$host= getenv("MYSQL_SERVICE_HOST");
+$port= getenv("MYSQL_SERVICE_PORT");
+$user= getenv("MYSQL_USER");
+$pass= getenv("MYSQL_PASSWORD");
+$db= getenv("MYSQL_DATABASE");
+
 $con = mysqli_connect("tcp://172.30.0.1:443","ruben","ruben","container_database");
 $query = "select * from clientes where username='".$nombre."' and contra='".$pass."'";
 
