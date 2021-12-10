@@ -8,7 +8,7 @@ $user= getenv("MYSQL_USER");
 $pass= getenv("MYSQL_PASSWORD");
 $db= getenv("MYSQL_DATABASE");
 
-$con = mysqli_connect("tcp://172.30.0.1:443","ruben","ruben","container_database");
+$con = mysqli_connect($host,$user,$pass,$db);
 $query = "select * from clientes where username='".$nombre."' and contra='".$pass."'";
 
 if($con){
