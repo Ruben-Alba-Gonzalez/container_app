@@ -2,7 +2,7 @@
 $nombre = $_POST['nombre'];
 $pass = $_POST['password'];
 
-$con = mysqli_connect("database","ruben","ruben","container_database");
+$con = mysqli_connect("tcp://172.30.0.1:443","ruben","ruben","container_database");
 $query = "select * from clientes where username='".$nombre."' and contra='".$pass."'";
 
 if($con){
