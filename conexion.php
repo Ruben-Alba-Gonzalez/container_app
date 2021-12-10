@@ -79,7 +79,7 @@ if($con){
 
     mysqli_close($con);
 }else{
-    echo "no conectado bro..";
+    echo "No se ha podido conectar";
 }
 
 ?>
