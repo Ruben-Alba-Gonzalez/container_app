@@ -14,7 +14,7 @@ $query = "select * from clientes where username='".$nombre."' and contra='".$pas
 if($con){
     $result = mysqli_query($con, $query);
 
-    if ($result->num_rows < 0) {
+    if ($result->num_rows = 0) {
         // output data of each row
         while($row = $result->fetch_assoc()) {
             $nombre = $row['nombre'];
